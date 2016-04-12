@@ -112,12 +112,12 @@ class JFormFieldTextcounter extends JFormFieldText
 	private function getCounterMask()
 	{
 
-		$text = '<span id="charscontainer_'.$this->id.'">';
+		$text = '<span class="charscontainer" id="charscontainer_'.$this->id.'">';
 		$text .= $this->countertext;
 
-		$text = str_replace('{used}', '<span id="usedchars_'.$this->id.'">0</span>', $text);
-		$text = str_replace('{remaining}', '<span id="remainingchars_'.$this->id.'">'.$this->maxlength.'</span>', $text);
-		$text = str_replace('{maxlength}', '<span id="maxlength_'.$this->id.'">'.$this->maxlength.'</span>', $text);
+		$text = str_replace('{used}', '<span class="charscontainer_used" id="usedchars_'.$this->id.'">0</span>', $text);
+		$text = str_replace('{remaining}', '<span class="charscontainer_remaining" id="remainingchars_'.$this->id.'">'.$this->maxlength.'</span>', $text);
+		$text = str_replace('{maxlength}', '<span class="charscontainer_maxlength" id="maxlength_'.$this->id.'">'.$this->maxlength.'</span>', $text);
 
 		$text .= '</span>';
 		return $text;
