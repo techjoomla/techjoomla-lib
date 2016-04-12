@@ -1,7 +1,8 @@
 # Documentation for fields as part of the tj library
+This folder contains several nifty Joomla! jfields created by us across various projects. It's fun to create these fields, and keep on improving them across projects. 
 
 ## Inputbox with character counter (textcounter)
-This fields is an extension to a normal input field that shows a counter below the input box that can show the character length. If a maxlength is specified for the inputbox, the field can also display remaining characters. This field adds a new `countertext` attribute where you can specify the text that shows the counter. It's possible to use 3 replacement tokens which will dynamically be replaced with the right values when the field loads. The text and values load in a span element with a unique id so it's possible to style it independently.
+This field is an extension to a normal text input field that displays a counter below the input box to indicate the character length of the field value. If the `maxlength` attribute is specified for the inputbox, the field can also display remaining characters. This field adds a new `countertext` attribute where you can specify the text that shows the counter. It's possible to use 3 replacement tokens `{maxlength}`, `{used}` and `{remaining}` which will dynamically be replaced with the right values when the field loads. The text and values load in a span element with a unique id so it's possible to style it independently.
 
 *Usage*
 ```xml
